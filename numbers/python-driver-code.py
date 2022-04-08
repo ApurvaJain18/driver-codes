@@ -1,9 +1,21 @@
 # Python Driver Code
 
 def solve(n: int) -> str:
-  # Your code goes here
-  # n is the given input
-  return "Special"
+  n=str(n)
+  n=list(n)
+  mid=int(len(n)//2)
+  if len(n)%2==0:
+    p="".join(n[mid:])
+    q="".join(n[mid:])
+   else:
+      p="".join(n[mid+1:])
+      q="".join(n[:mid])
+    if int(q)>int(p):
+      return("magic number")
+    else:
+      return("normal number")
+  
+
 
 # The following snippet reads the input in the required format. 
 # Just complete the solve function above. 
