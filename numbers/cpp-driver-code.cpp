@@ -6,6 +6,14 @@ using namespace std;
 string solve (int n) {
    // Your code goes here
    // n is the given input
+   len = floor(log10(abs(n)))+1;
+   x=n/pow(10,len/2);
+   y=n-x*pow(10,len/2);
+   if (x>y){
+   cout<<"magic number";
+   else
+      cout<<"normal number";
+   }
    return "Special";
 }
 
